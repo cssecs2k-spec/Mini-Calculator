@@ -1,0 +1,81 @@
+def add_nums():                                        
+    try:                                                
+        a = float(input("Input first number!"))                                               
+        b = float(input("Input second number!"))                                                
+        print ("Sum: ", a + b)                                                
+    except:                                                
+        print ("Invalid Input!")                                      
+def multiply_nums():                                      
+    try:                                                
+        a = float(input("Input first number!"))                                               
+        b = float(input("Input second number!"))                                               
+        print ("Product: ", a * b)
+    except:
+        print ("Invalid Input!")
+def divide_nums():
+    try:
+        a = float(input("Input first number!"))  
+        b = float(input("Input second number!"))
+        print ("Division: ", a / b)  
+    except:                                                
+        print ("Invalid Input!")        
+def floor_division():        
+    try:        
+        a = float(input("Input first number!"))       
+        b = float(input("Input second number!"))
+        print ("Floor division: ", a//b)
+    except:
+        print ("Invalid Input!")  
+def subtract_nums():    
+    try:        
+        a = float(input("Input first number!"))       
+        b = float(input("Input second number!"))
+        print ("Subtraction: ", a - b)
+    except:
+        print ("Invalid Input!")
+def modulus_nums():
+        try:
+            a = float(input("Input first number!"))
+            b = float(input("Input second number!"))
+            print ("Remainder: ", a % b) 
+        except:
+            print ("Invalid Input!")
+def expo_power():
+    try:
+        a = float(input("Input first number!"))
+        b = float(input("Input second number!"))
+        print ("Power: ", a ** b)
+    except:
+        print ("Invalid Input!")                                       
+while True:                                                  
+    print ("\nMenu: ")                                                  
+    print ("1. Addition")       
+    print ("2. Multiplication")  
+    print ("3. Division")      
+    print ("4. Floor Division")   
+    print ("5. Subtraction")
+    print ("6. Remainder")   
+    print ("7. Raised To The Power Of")                                           
+    print ("8. Exit")                                      
+    try:                                      
+        choice = float(input("Input choice!"))                                      
+    except:                                       
+        print("Invalid Command!")                        
+        continue                
+    if choice == 1:                
+        add_nums()                
+    elif choice == 2:                
+        multiply_nums()                
+    elif choice == 3:
+        divide_nums()
+    elif choice == 4:
+        floor_division()        
+    elif choice == 5:    
+        subtract_nums()    
+    elif choice == 6:
+        modulus_nums()
+    elif choice == 7:
+        expo_power()
+    elif choice == 8:           
+        print("Exiting...")                
+        break
